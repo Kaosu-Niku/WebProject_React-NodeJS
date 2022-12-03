@@ -14,8 +14,8 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "../Client/build/index.html"));
 });
-app.get("/static/js/main.dfeaa381.js", (req, res) => {
-    res.sendFile(path.join(__dirname, "../Client/build/static/js/main.dfeaa381.js"));
+app.get("/static/js/main.cfd78533.js", (req, res) => {
+    res.sendFile(path.join(__dirname, "../Client/build/static/js/main.cfd78533.js"));
 });
 app.get("/static/css/main.96d0eb35.css", (req, res) => {
     res.sendFile(path.join(__dirname, "../Client/build/static/css/main.96d0eb35.css"));

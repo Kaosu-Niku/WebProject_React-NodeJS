@@ -14,7 +14,7 @@ function App(props) {
     <div className="flex root-div">
       <div className="header-position-div">
         <div className="flex header-flex-div">
-          <img id="headerImg" className="header-div-img" src="https://nikuwebprojectserver.herokuapp.com/Asset/Image/Icon.png" alt="icon" />
+          <img id="headerImg" className="header-div-img" src="/Asset/Image/Icon.png" alt="icon" />
           <HeaderButton headerButtonId="buttonHome" headerButtonContent="Home" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
           <HeaderButton headerButtonId="buttonHTML" headerButtonContent="HTML" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
           <HeaderButton headerButtonId="buttonCSS" headerButtonContent="CSS" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />

@@ -14,7 +14,7 @@ function HTMLObject(props) {
                     <h4>範例</h4>
                     <p>此處示範嵌入Json檔</p>
                     <div>
-                        <object data="https://nikuwebprojectserver.herokuapp.com/Asset/Json/Test.json" type="application/json">
+                        <object data="/Asset/Json/Test.json" type="application/json">
                         </object>
                     </div>
                 </div>

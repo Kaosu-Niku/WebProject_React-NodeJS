@@ -17,7 +17,7 @@ function HTMLMultimedia(props) {
                 <div className="example">
                     <h4>範例</h4>
                     <div>
-                        <audio src="https://nikuwebprojectserver.herokuapp.com/Asset/Audio/Bury the Light.mp3" controls style={{ width: "50%" }}></audio>
+                        <audio src="/Asset/Audio/Bury the Light.mp3" controls style={{ width: "50%" }}></audio>
                     </div>
                 </div>
             </div>
@@ -33,7 +33,7 @@ function HTMLMultimedia(props) {
                 <div className="example">
                     <h4>範例</h4>
                     <div>
-                        <video src="https://nikuwebprojectserver.herokuapp.com/Asset/Video/A.mp4" controls poster="https://nikuwebprojectserver.herokuapp.com/Asset/Image/Icon.png" style={{ width: "50%" }}></video>
+                        <video src="/Asset/Video/A.mp4" controls poster="/Asset/Image/Icon.png" style={{ width: "50%" }}></video>
                     </div>
                 </div>
             </div>

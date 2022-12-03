@@ -464,7 +464,7 @@ function JavaScriptEventTarget(props) {
                 </div>
                 <div style={{ borderStyle: "solid" }}>
                     <hr />
-                    <audio id="audio" src="https://nikuwebprojectserver.herokuapp.com/Asset/Audio/Bury the Light.mp3" controls style={{ width: "50%" }}></audio>
+                    <audio id="audio" src="/Asset/Audio/Bury the Light.mp3" controls style={{ width: "50%" }}></audio>
                     <hr />
                     <p style={{ marginLeft: "25px" }}>多媒體:</p>
                     <label className="test-label">play:</label>

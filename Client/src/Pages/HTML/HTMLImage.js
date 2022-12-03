@@ -13,7 +13,7 @@ function HTMLImage(props) {
                 <div className="example">
                     <h4>範例</h4>
                     <div>
-                        <img src="https://nikuwebprojectserver.herokuapp.com/Asset/Image/Icon.png" style={{ width: "250px", height: "250px;" }} alt="" />
+                        <img src="/Asset/Image/Icon.png" style={{ width: "250px", height: "250px;" }} alt="" />
                     </div>
                 </div>
                 <p>使用alt屬性設置圖片嵌入失敗時替代顯示的文本。</p>
@@ -38,7 +38,7 @@ function HTMLImage(props) {
                 <div className="example">
                     <h4>範例</h4>
                     <div>
-                        <img src="https://nikuwebprojectserver.herokuapp.com/Asset/Image/Icon.png" style={{ width: "250px", height: "250px;" }} usemap="#TestMap" alt="" />
+                        <img src="/Asset/Image/Icon.png" style={{ width: "250px", height: "250px;" }} usemap="#TestMap" alt="" />
                         <map name="TestMap">
                             <area herf="/" target="_blank" shape="rect" coords="0,0,250,250" alt="" />
                         </map>

@@ -13,8 +13,8 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", function (req, res) {
     res.sendFile(path.join(__dirname, "../Client/build/index.html"));
 });
-app.get("/static/js/main.dfeaa381.js", function (req, res) {
-    res.sendFile(path.join(__dirname, "../Client/build/static/js/main.dfeaa381.js"));
+app.get("/static/js/main.cfd78533.js", function (req, res) {
+    res.sendFile(path.join(__dirname, "../Client/build/static/js/main.cfd78533.js"));
 });
 app.get("/static/css/main.96d0eb35.css", function (req, res) {
     res.sendFile(path.join(__dirname, "../Client/build/static/css/main.96d0eb35.css"));
