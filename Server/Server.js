@@ -6,7 +6,7 @@ var path = require("path");
 var cors = require("cors");
 //! npm i -D typescript  @types/express
 var app = express();
-var port = process.env.PORT || 80;
+var port = process.env.PORT || 8080;
 app.listen(port);
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));

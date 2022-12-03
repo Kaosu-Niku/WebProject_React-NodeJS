@@ -5,7 +5,7 @@ import * as cors from "cors";
 
 //! npm i -D typescript  @types/express
 const app = express();
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 8080;
 app.listen(port);
 
 app.use(cors());
