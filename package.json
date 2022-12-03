@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "nodeman": "^1.1.2"
+  },
+  "scripts": {
+    "start": "node Server/Server.js"
+  }
+}

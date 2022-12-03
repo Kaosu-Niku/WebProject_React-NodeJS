@@ -1,0 +1,68 @@
+.main-content-div-iframe {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.content-div {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.content-div>* {
+    width: 95%;
+    text-align: left;
+}
+
+.example {
+    margin-left: 50px;
+}
+
+.function-div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-style: outset;
+}
+
+h1 {
+    color: black;
+}
+
+h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+p {
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+code {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: black;
+    color: white;
+    white-space: pre;
+}
+
+output {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-style: inset;
+}
+
+code {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
