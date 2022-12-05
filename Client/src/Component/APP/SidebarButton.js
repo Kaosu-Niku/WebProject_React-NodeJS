@@ -5,7 +5,7 @@ function SidebarButton(props) {
             buttonNameArray = ["Basic", "Element", "Attributes", "Meta", "Link", "Layout", "Paragraphs", "Formatting", "List", "Table", "Iframe", "Object", "Image", "Multimedia", "Forms"];
             break;
         case "CSS":
-            buttonNameArray = ["Basic", "Selector", "Declaration", "Layout", "BoxModel", "Flex", "BoxOther", "Background", "Text", "Font", "List", "Dynamic"]
+            buttonNameArray = ["Basic", "Selector", "Declaration", "Layout", "BoxModel", "Flex", "BoxOther", "Background", "Text", "Font", "List", "Dynamic", "RWD"]
             break;
         case "JavaScript":
             buttonNameArray = ["Basic", "Syntax", "Window", "WindowHistory", "WindowLocation", "WindowNavigator", "Document", "Element", "EventTarget", "EventObject"]

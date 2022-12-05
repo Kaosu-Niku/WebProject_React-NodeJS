@@ -5,7 +5,7 @@ function HTMLBasic(props) {
         <div className="flex main-content-div-iframe">
             <div className="flex content-div">
                 <h1>HTML是什麼</h1>
-                <p>HTML全稱 Hypertext Markup Language。中文稱作超文字標記語言。</p>
+                <p>HTML全稱 Hypertext Markup Language。超文字標記語言。</p>
                 <p>HTML不是程式語言，而是一個用於建立網頁的標記式語言。</p>
                 <p>瀏覽器會解析HTML文件呈現對應內容，不同的瀏覽器對於相同內容的呈現都會有差別。</p>
             </div>

@@ -45,12 +45,10 @@ p {
 }
 
 code {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    padding: 10px;
     background-color: black;
     color: white;
-    white-space: pre;
+    white-space: pre-wrap;
 }
 
 output {
@@ -58,11 +56,4 @@ output {
     padding-bottom: 5px;
     padding-left: 10px;
     border-style: inset;
-}
-
-code {
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
 }

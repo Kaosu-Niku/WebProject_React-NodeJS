@@ -1,5 +1,5 @@
 import React from 'react';
-import './CSSDynamic.css'
+import './CSSDynamic.css';
 
 function CSSDynamic(props) {
     let transitionTimingFunctionCheck = true;
@@ -141,32 +141,20 @@ function CSSDynamic(props) {
                 <div className="example">
                     <h4>範例</h4>
                     <p>%數代表了依動畫比例取的關鍵幀，例如一個2秒的動畫，50%就代表1秒，100%就代表2秒</p>
-                    <code style={{ display: "inline-block", width: "500px" }}>@keyframes myAnimation1 {"{"}</code>
-                    <br />
-                    <code style={{ display: "inline-block", width: "500px" }}>    0% {"{"}</code>
-                    <br />
-                    <code style={{ display: "inline-block", width: "500px" }}>        background- color: red;</code>
-                    <br />
-                    <code style={{ display: "inline-block", width: "500px" }}>    {"}"}</code>
-                    <br />
-                    <code style={{ display: "inline-block", width: "500px" }}>    50% {"{"}</code>
-                    <br />
-                    <code style={{ display: "inline-block", width: "500px" }}>        transform: translate(500px);</code>
-                    <br />
-                    <code style={{ display: "inline-block", width: "500px" }}>        background-color: green;</code>
-                    <br />
-                    <code style={{ display: "inline-block", width: "500px" }}>    {"}"}</code>
-                    <br />
-                    <code style={{ display: "inline-block", width: "500px" }}>    100% {"{"}</code>
-                    <br />
-                    <code style={{ display: "inline-block", width: "500px" }}>        transform: translate(0);</code>
-                    <br />
-                    <code style={{ display: "inline-block", width: "500px" }}>        background-color: red;</code>
-                    <br />
-                    <code style={{ display: "inline-block", width: "500px" }}>    {"}"}</code>
-                    <br />
-                    <code style={{ display: "inline-block", width: "500px" }}>{"}"}</code>
                 </div>
+                <code>@keyframes myAnimation1 {"{"}</code>
+                <code>    0% {"{"}</code>
+                <code>        background- color: red;</code>
+                <code>    {"}"}</code>
+                <code>    50% {"{"}</code>
+                <code>        transform: translate(500px);</code>
+                <code>        background-color: green;</code>
+                <code>    {"}"}</code>
+                <code>    100% {"{"}</code>
+                <code>        transform: translate(0);</code>
+                <code>        background-color: red;</code>
+                <code>    {"}"}</code>
+                <code>{"}"}</code>
                 <h3>animation-name</h3>
                 <p>播放指定名稱的動畫</p>
                 <div className="example">

@@ -32,6 +32,7 @@ import CSSText from '../../Pages/CSS/CSSText.js';
 import CSSFont from '../../Pages/CSS/CSSFont.js';
 import CSSList from '../../Pages/CSS/CSSList.js';
 import CSSDynamic from '../../Pages/CSS/CSSDynamic.js';
+import CSSRWD from '../../Pages/CSS/CSSRWD.js';
 //JavaScript
 import JavaScriptBasic from '../../Pages/JavaScript/JavaScriptBasic.js';
 import JavaScriptSyntax from '../../Pages/JavaScript/JavaScriptSyntax.js';
@@ -98,6 +99,7 @@ function Content(props) {
         case "CSS/Font": return (<CSSFont />);
         case "CSS/List": return (<CSSList />);
         case "CSS/Dynamic": return (<CSSDynamic />);
+        case "CSS/RWD": return (<CSSRWD />);
 
         case "JavaScript/Basic": return (<JavaScriptBasic />);
         case "JavaScript/Syntax": return (<JavaScriptSyntax />);

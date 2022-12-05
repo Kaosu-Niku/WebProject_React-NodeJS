@@ -62,28 +62,6 @@ function HTMLParagraphs(props) {
             <div className="flex content-div">
                 <h1>pre</h1>
                 <p>pre用來建立一個與程式碼區塊相同排版的文字內容段落。</p>
-                <div className="example">
-                    <h4>範例</h4>
-                    <div>
-                        <pre style={{ borderStyle: "solid" }}>
-                            ⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠛⠛⠛⢻⡻⠿⣿⣿⣿⣿⣿⣿⣿⣿
-                            ⣿⣿⣿⣿⣿⣿⣟⣫⡾⠛⠛⠛⠛⠛⠛⠿⣾⣽⡻⣿⣿⣿⣿⣿
-                            ⣿⣿⣿⣿⣿⡟⣼⠏⠀⠀⠀⠀⠀⠀⣀⣀⡀⣙⣿⣎⢿⣿⣿⣿
-                            ⣿⣿⣿⣿⣿⢹⡟⠀⠀⠀⣰⡾⠟⠛⠛⠛⠛⠛⠛⠿⣮⡻⣿⣿
-                            ⣿⡿⢟⣻⣟⣽⠇⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⡹⣿
-                            ⡟⣼⡟⠉⠉⣿⠀⠀⠀⠀⢿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⢟⣿
-                            ⣇⣿⠁⠀⠀⣿⠀⠀⠀⠀⠘⢿⣦⣄⣀⣀⣀⣀⣤⡴⣾⣏⣾⣿
-                            ⡇⣿⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠈⠉⠛⠋⠉⠉⠀⠀⢻⣿⣿⣿
-                            ⢃⣿⠀⠀⠀⣿⠀ ⢸⣧⣿⣿
-                            ⡻⣿⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣧⣿⣿
-                            ⡇⣿⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⢹⣿⣿
-                            ⣿⡸⢷⣤⣤⣿⡀⠀⠀⠀⠀⢠⣤⣄⣀⣀⣀⠀⠀⢠⣿⣿⣿⣿
-                            ⣿⣿⣷⣿⣷⣿⡇⠀⠀⠀⠀⢸⡏⡍⣿⡏⠀⠀⠀⢸⡏⣿⣿⣿
-                            ⣿⣿⣿⣿⣿⢼⡇⠀⠀⠀⠀⣸⡇⣷⣻⣆⣀⣀⣀⣼⣻⣿⣿⣿
-                            ⣿⣿⣿⣿⣿⣜⠿⢦⣤⣤⡾⢟⣰⣿⣷⣭⣯⣭⣯⣥⣿⣿⣿⣿
-                        </pre>
-                    </div>
-                </div>
             </div>
             <div className="flex content-div">
                 <h1>br</h1>
@@ -119,15 +97,15 @@ function HTMLParagraphs(props) {
                 <div className="example">
                     <h4>範例</h4>
                     <div>
-                        <details style={{ borderStyle: "solid" }} open>
+                        <details style={{ borderStyle: "solid" }}>
                             <summary>Bury the Light</summary>
-                            <pre style={{ fontSize: "30px" }}>
+                            <p style={{ fontSize: "30px" }}>
                                 I am the storm that is approaching.
                                 Provoking black clouds in isolation.
                                 I am reclaimer of my name.
                                 Born in flames, I have been blessed.
                                 My family crest is a demon of death.
-                            </pre>
+                            </p>
                         </details>
                     </div>
                 </div>

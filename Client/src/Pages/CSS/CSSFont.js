@@ -1,4 +1,5 @@
 import React from 'react';
+import './CSSFont.css';
 
 function CSSFont(props) {
     return (
@@ -28,16 +29,13 @@ function CSSFont(props) {
                 <div class="example">
                     <h4>範例</h4>
                     <div>
-                        <code style={{ display: "inline-block", width: "750px" }}>@font-face {"{"}</code>
-                        <br />
-                        <code style={{ display: "inline-block", width: "750px" }}>    font-family: my-font;</code>
-                        <br />
-                        <code style={{ display: "inline-block", width: "750px" }}>    src: url("/Asset/Font/VeganStylePersonalUse-5Y58.ttf");</code>
-                        <br />
-                        <code style={{ display: "inline-block", width: "750px" }}>{"}"}</code>
                         <p style={{ fontFamily: "my-font" }}>This is my custon font.</p>
                     </div>
                 </div>
+                <code>@font-face {"{"}</code>
+                <code>    font-family: my-font;</code>
+                <code>    src: url("/Asset/Font/VeganStylePersonalUse-5Y58.ttf");</code>
+                <code>{"}"}</code>
             </div>
             <div class="flex content-div">
                 <h1>字體設置</h1>
