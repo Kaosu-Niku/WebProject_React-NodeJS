@@ -13,11 +13,14 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", function (req, res) {
     res.sendFile(path.join(__dirname, "../Client/build/index.html"));
 });
-app.get("/static/js/main.cfd78533.js", function (req, res) {
-    res.sendFile(path.join(__dirname, "../Client/build/static/js/main.cfd78533.js"));
+app.get("/static/js/main.1b3a6962.js", function (req, res) {
+    res.sendFile(path.join(__dirname, "../Client/build/static/js/main.1b3a6962.js"));
 });
-app.get("/static/css/main.96d0eb35.css", function (req, res) {
-    res.sendFile(path.join(__dirname, "../Client/build/static/css/main.96d0eb35.css"));
+app.get("/static/css/main.f2adf2e0.css", function (req, res) {
+    res.sendFile(path.join(__dirname, "../Client/build/static/css/main.f2adf2e0.css"));
 });
 var routerAsset = require("./Router/Asset");
 app.use("/Asset/", routerAsset.router);
+app.get("/httpRequestTest", function (req, res) {
+    res.send({ "A": "123", "B": "你好", "C": "true" });
+});

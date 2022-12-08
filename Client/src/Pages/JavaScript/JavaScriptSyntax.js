@@ -100,21 +100,50 @@ function JavaScriptSyntax(props) {
                 <code>catch{"{"} {"}"}</code>
             </div>
             <div className="flex content-div">
+                <h1>class</h1>
+                <p>JavaScript從ES6開始引入了物件(class)的概念，如果有學過OOP語言會很好理解。</p>
+                <h3>宣告物件</h3>
+                <code>class 物件(){"{"}</code>
+                <code>  constructor(AAA,BBB){"{"}</code>
+                <code>      this.A = AAA;</code>
+                <code>      this.B = BBB;</code>
+                <code>  {"}"}</code>
+                <code>{"}"}</code>
+                <h3>創建新的物件</h3>
+                <code>let 新物件 = new 物件(10,"你好");</code>
+                <h2>講解</h2>
+                <h3>建構子</h3>
+                <p>constructor()為建構子，其目的在於為物件初始化數據，建構子具有強制性，若要創建該物件就必須提供與建構子對應的數據。</p>
+                <h3>this</h3>
+                <p>要搞清楚ES6的this不是一件簡單的事，this在不同的地方所表示的都不同，以class為出發點，this用於代表該物件本身，</p>
+                <p>上述例子中的this.A代表該物件有一個成員A，而這個成員A的值取決於物件被創建時所填入的第一個值AAA，</p>
+                <p>可以透過 新物件.A 調用成員A的值，上述例子調用後會得到10。</p>
+            </div>
+            <div className="flex content-div">
                 <h1>非同步</h1>
                 <h3>Promise</h3>
-                <p>中文意為承諾，Promise用於新增一項任務處理，Promise任務結束後分兩種結果，resolve(解決)、reject(失敗)，可以以此處理邏輯。</p>
-                <code>const pr = new Promise((reject,resolve) =&gt; {"{"} {"}"});</code>
-                <h3>then</h3>
-                <p>then是配合Promise一起使用的，用於Promise任務結束後的接續動作，當一項Promise任務結束後會立即執行then區塊，result參數包含Promise任務的資訊。</p>
+                <p>Promise用於建立任務處理，Promise具有三種狀態，Promise處理中、Resolved處理完成且成功、Rejected處理完成但失敗，</p>
+                <p>Promise為一個class類型，建構函式需要一個帶有兩個參數的函式，這兩個參數可自訂名稱，但命名約定上習慣使用resolve(成功)、reject(失敗)。</p>
+                <p>調用resolve()代表狀態Resolved，調用reject()代表狀態Rejected，回傳結果並結束任務處理，這就是Promise的基本運作邏輯。</p>
+                <code>const pr = new Promise((resolve,reject) =&gt; {"{"} {"}"});</code>
+                <h3>then、catch、finally</h3>
+                <p>Promise具有一些用於任務結束後的接續處理的函式，狀態Resolved執行then、狀態Rejected執行catch、只要任務結束就執行finally，</p>
+                <p>這些函式都會回傳一個result對象，result對象為Promise的回傳值。</p>
                 <code>pr.then((result) =&gt; {"{"} {"}"});</code>
-                <p>Promise結合then的運作機制使其非常適合用於非同步的設計模式。</p>
+                <p>Promise結合這些函式的運用使其非常適合用於非同步的設計模式。</p>
                 <h3>async & await</h3>
-                <p>async用於宣告函式是非同步的，只有非同步函式可以使用await，await用於非同步執行會回傳Promise對象的函式。</p>
-                <code>function 包裝(){"{"} return pr; {"}"}</code>
+                <p>async和await是語法糖，繼承自於Pormise的概念，為了更直觀且更簡單的呈現Promise的內容，</p>
+                <p>async用於宣告一個回傳Promise的非同步函式，就算函式本身的實質內容沒有回傳Promise，async也會自動將函式包裝為回傳Promise的函式，</p>
+                <p>await用於獲取Promise的回傳值，非同步函式必定會等待await執行完畢回傳結果後才會繼續往下執行 (!! await只能使用於回傳Promise的函式 !!)</p>
+                <p>(!! 若不經由await去調用非同步函式，則只會得到undefined，因為不使用await就不會觸發等待流程，而是直接繼續往下執行 !!)</p>
+                <code>function 包裝Promise(){"{"} return pr; {"}"}</code>
                 <code>async 非同步(){"{"}</code>
-                <code>await 包裝();</code>
+                <code>  let 回傳值 = await 包裝Promise();</code>
+                <code>  return 回傳值;</code>
                 <code>{"}"}</code>
                 <code>非同步().then((result) =&gt; {"{"} {"}"});</code>
+                <h3>try...catch優化</h3>
+                <p>最好將非同步函式的所有內容包含至try區塊內，因為非同步流程非常有可能發生問題導致流程卡死。</p>
             </div>
             <div className="flex content-div">
                 <h1>其它</h1>

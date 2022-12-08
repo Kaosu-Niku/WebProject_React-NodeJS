@@ -1,6 +1,9 @@
 import React from 'react';
+import { useState } from 'react';
 
 function JavaScriptWindow(props) {
+    const [fetchUrl, setFetchUrl] = useState('http://localhost:8080/httpRequestTest');
+    const [fetchValue, setFetchValue] = useState(null);
     return (
         <div className="flex main-content-div-iframe">
             <div className="flex content-div">
@@ -79,6 +82,8 @@ function JavaScriptWindow(props) {
                 </div>
                 <h3>window.setTimeout(foo:function, time:number)</h3>
                 <p>過了指定時間後執行函式 (時間單位:毫秒)</p>
+                <h3>window.clearTimeout(index:number)</h3>
+                <p>停止指定的setTimeout()函式</p>
                 <div className="function-div">
                     <h4>(按下按鈕的三秒後會顯示一則訊息)</h4>
                     <p id="setTimeout-p" hidden>Hellooooooooooooooooo!</p>
@@ -86,6 +91,8 @@ function JavaScriptWindow(props) {
                 </div>
                 <h3>window.setInterval(foo:function, time:number)</h3>
                 <p>每過一次指定時間執行一次函式 (時間單位:毫秒)</p>
+                <h3>window.clearInterval(index:number)</h3>
+                <p>停止指定的setInterval()函式</p>
                 <div className="function-div">
                     <h4>(每秒刷新一次)</h4>
                     <p id="setInterval-p">0</p>
@@ -95,12 +102,39 @@ function JavaScriptWindow(props) {
                         setInterval(() => { t++; setIntervalP.textContent = t; }, 1000);
                     }}>setInterval</button>
                 </div>
-                <h3>window.clearTimeout(index:number)</h3>
-                <p>停止指定的setTimeout()函式</p>
-                <h3>window.clearInterval(index:number)</h3>
-                <p>停止指定的setInterval()函式</p>
-
-
+                <h3>fetch(url:string, options:object)</h3>
+                <p>發送HTTP請求至指定的網址，此為非同步函式，回傳一個response物件，透過response可獲取資料。</p>
+                <p>參數options具有可選選項，可對該請求做更詳細的設置，<a href='https://developer.mozilla.org/en-US/docs/Web/API/fetch#options'>options參考</a></p>
+                <div className="function-div">
+                    <h4>(輸入欄輸入任意url後，按下按鈕後以GET請求獲取數據(預設數據為json格式)，輸出欄顯示獲取的JSON數據)</h4>
+                    <span>請輸入任意url:</span>
+                    <input id="fetch-input" onChange={(event) => { setFetchUrl(event.target.value); }}></input>
+                    <h4>(若輸入欄為空值，則默認請求路徑為 /httpRequestTest )</h4>
+                    <output id="fetch-output">{`{ ${fetchValue} }`}</output>
+                    <br />
+                    <button onClick={() => {
+                        async function fetchTest() {
+                            let response;
+                            if (fetchUrl !== undefined)
+                                response = await fetch(fetchUrl);
+                            else
+                                response = await fetch('http://localhost:8080/httpRequestTest');
+                            let jsonData = await response.json();
+                            return jsonData;
+                        }
+                        fetchTest().then((result) => {
+                            // result === jsonData
+                            let jsonString = null;
+                            for (let key in result) {
+                                if (jsonString === null)
+                                    jsonString = `${key}:${result[key]}, `;
+                                else
+                                    jsonString += `${key}:${result[key]}, `;
+                            }
+                            setFetchValue(jsonString);
+                        });
+                    }}>fetch</button>
+                </div>
             </div>
         </div>
     );

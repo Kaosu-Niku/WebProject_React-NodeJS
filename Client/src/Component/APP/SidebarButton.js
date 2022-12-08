@@ -25,6 +25,9 @@ function SidebarButton(props) {
         case "SQL":
             buttonNameArray = ["Basic", "MySQL"]
             break;
+        case "Git":
+            buttonNameArray = ["Basic"]
+            break;
         default:
             buttonNameArray = [];
             break;

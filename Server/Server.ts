@@ -14,12 +14,16 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "../Client/build/index.html"));
 });
-app.get("/static/js/main.cfd78533.js", (req, res) => {
-    res.sendFile(path.join(__dirname, "../Client/build/static/js/main.cfd78533.js"));
+app.get("/static/js/main.1b3a6962.js", (req, res) => {
+    res.sendFile(path.join(__dirname, "../Client/build/static/js/main.1b3a6962.js"));
 });
-app.get("/static/css/main.96d0eb35.css", (req, res) => {
-    res.sendFile(path.join(__dirname, "../Client/build/static/css/main.96d0eb35.css"));
+app.get("/static/css/main.f2adf2e0.css", (req, res) => {
+    res.sendFile(path.join(__dirname, "../Client/build/static/css/main.f2adf2e0.css"));
 });
 
 import * as routerAsset from "./Router/Asset";
 app.use("/Asset/", routerAsset.router);
+
+app.get("/httpRequestTest", (req, res) => {
+    res.send({ "A": "123", "B": "你好", "C": "true" });
+});

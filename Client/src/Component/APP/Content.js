@@ -67,6 +67,8 @@ import ExpressJSResponse from '../../Pages/ExpressJS/ExpressJSResponse.js';
 //SQL
 import SQLBasic from '../../Pages/SQL/SQLBasic.js';
 import SQLMySQL from '../../Pages/SQL/SQLMySQL.js';
+//Git
+import GitBasic from '../../Pages/Git/GitBasic.js';
 
 function Content(props) {
     switch (props.setContent) {
@@ -134,6 +136,8 @@ function Content(props) {
 
         case "SQL/Basic": return (<SQLBasic />);
         case "SQL/MySQL": return (<SQLMySQL />);
+
+        case "Git/Basic": return (<GitBasic />);
 
         default: return (<Home />);
     }

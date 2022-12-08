@@ -46,9 +46,13 @@ function ReactBasic(props) {
             <div className="flex content-div">
                 <h1>打包靜態文件</h1>
                 <h2>打包</h2>
-                <p>開發環境的React檔案實際上不能直接使用，必須經過打包成靜態文件後才能將靜態文件交由瀏覽器或是伺服器使用。</p>
+                <p>開發環境的React檔案實際上不能直接使用，必須經過打包成靜態文件後才能將靜態文件交由瀏覽器或是伺服器使用，</p>
                 <p>CMD運行<code>npm run build</code>即可運行React內建的打包流程，打包完成後於同路徑下新增一個build資料夾</p>
-                <p>build資料夾下包含的就是打包完的靜態文件，直接瀏覽器開啟build資料夾下的index.html文件應該要看到如同"npm start"的模擬頁面</p>
+                <p>build資料夾下包含的就是打包完的靜態文件，build資料夾下的index.html文件就是要提供給瀏覽器或是伺服器的HTML靜態文件，</p>
+                <p>查看index.html靜態文件的內容可以發現該文件引用了一個CSS文件和JS文件，這兩個文件是React應用程式所有的CSS和JS內容經過集合打包產生的靜態文件，</p>
+                <p>因此只需要這三個靜態文件即可完整運行React應用程式的所有內容，但index.html還無法直接取得這兩個靜態文件，</p>
+                <p>除了伺服器端在根路徑"/"回應index.html文件的同持，也需要根據index.html的請求路徑回應兩個相應的靜態文件</p>
+                <p>(!!每一次重新打包，只要CSS或JS的內容有改變，則產生的靜態文件其名稱以及index.html的請求路徑都會改變，因此伺服器端也需要更新!!)</p>
             </div>
         </div >
     );
